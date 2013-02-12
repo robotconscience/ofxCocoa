@@ -15,16 +15,16 @@ OF + Cocoa is pretty simple, but there are a few things to make sure to do, othe
   one of memo's original nib files ("WithWindow" or "NoWindow")
   2. Add a nib file to your project (either one of the included ones, or a new one of your own)
   3. Add a "Copy Bundle Resources" build phase to your project, and drag your nib file into it
-    a. Click on your project in the left bar in XCode
-    b. Click on your app under "Targets" in the build window
-    c. Click the "Build Phases" tab
-    d. Check if there is a "Copy Bundle Resources" phase; if not, click the "+" icon that says "Add Build Phase" and select "Add Copy Bundle Resources"
-    e. Drag your nib file into the box under "Copy Bundle Resources", or select the "+" button at the bottom of the box and find your nib file in Finder
-  4. Make sure your C++ files are set to "Default - Objective C++" under "File Type"
-    a. Select one of your source files (main.cpp, testApp.cpp or testApp.mm) 
-    b. Make sure your Utilities panel is visible (View > Utilities > Show Utilites from the File menu)
-    c. Next to where it says "File Type", make sure the dropdown says "Default - Objective C++"
-    d. If it just says "C++", click the dropdown and select "Objective C++" or "Default - Objective C++" (if it's .mm)
-    e. Repeat for each source file that is including any Objective-C
+    * Click on your project in the left bar in XCode
+    * Click on your app under "Targets" in the build window
+    * Click the "Build Phases" tab
+    * Check if there is a "Copy Bundle Resources" phase; if not, click the "+" icon that says "Add Build Phase" and select "Add Copy Bundle Resources"
+    * Drag your nib file into the box under "Copy Bundle Resources", or select the "+" button at the bottom of the box and find your nib file in Finder
+  4. Make sure your C++ files are set to "Default - Objective C++" under "File Type"  
+    * Select one of your source files (main.cpp, testApp.cpp or testApp.mm) 
+    * Make sure your Utilities panel is visible (View > Utilities > Show Utilites from the File menu)
+    * Next to where it says "File Type", make sure the dropdown says "Default - Objective C++"
+    * If it just says "C++", click the dropdown and select "Objective C++" or "Default - Objective C++" (if it's .mm)
+    * Repeat for each source file that is including any Objective-C
   5. If you're mixing C++ and Objective-C in a file, change its extension from .cpp to .mm
     a. This will help with Step 4, as it should set the default type to "Objective C++"
