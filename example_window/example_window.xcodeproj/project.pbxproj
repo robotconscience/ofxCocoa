@@ -3,20 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0ceb05d4444dd574d4e53d84342571a0 /* ofxCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = d81093270e902accf42c970b6c2363cc /* ofxCocoa.mm */; };
-		304cdace8a4e384196bd9325eac28579 /* GLWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = d7a80730cff890b8e92a2b6edda92715 /* GLWindow.mm */; };
-		44700308c06a2c12a26f0d91f71989f4 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = f477b8e4f3d3a8967fdd6719a05fd194 /* AppDelegate.mm */; };
-		4f3d9a60113255ec7fd650237a2721be /* Events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 331ed6f62b50c37cde714efe0ab02e60 /* Events.mm */; };
-		4f5fb969cb21ab2665798079b21cb85c /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3daf980fea341450256a08faefe7bee9 /* GLView.mm */; };
-		590fef0d293d8c60bee0c47042ea1ed6 /* MyUIDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = c1c61c80a74c50ecfcc43958339fbc18 /* MyUIDelegate.mm */; };
-		99f4edadf349e266c458ec67e23b7b61 /* AppWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2042dfd3744fa2a91b490ec6c5ba4de4 /* AppWindow.mm */; };
-		A937C55316CB000C0041FDDD /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A937C55116CB000C0041FDDD /* main.mm */; };
-		A937C55416CB000C0041FDDD /* testApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A937C55216CB000C0041FDDD /* testApp.mm */; };
-		A937C55C16CB00260041FDDD /* WithWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A937C55916CB00260041FDDD /* WithWindow.xib */; };
+		0CEB05D4444DD574D4E53D84 /* ofxCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = D81093270E902ACCF42C970B /* ofxCocoa.mm */; };
+		304CDACE8A4E384196BD9325 /* GLWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7A80730CFF890B8E92A2B6E /* GLWindow.mm */; };
+		44700308C06A2C12A26F0D91 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F477B8E4F3D3A8967FDD6719 /* AppDelegate.mm */; };
+		4F3D9A60113255EC7FD65023 /* Events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 331ED6F62B50C37CDE714EFE /* Events.mm */; };
+		4F5FB969CB21AB2665798079 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF980FEA341450256A08FA /* GLView.mm */; };
+		590FEF0D293D8C60BEE0C470 /* MyUIDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1C61C80A74C50ECFCC43958 /* MyUIDelegate.mm */; };
+		99F4EDADF349E266C458EC67 /* AppWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2042DFD3744FA2A91B490EC6 /* AppWindow.mm */; };
+		A9DD34891844EC8600A97DC4 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9DD34871844EC8600A97DC4 /* main.mm */; };
+		A9DD348A1844EC8600A97DC4 /* testApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9DD34881844EC8600A97DC4 /* testApp.mm */; };
+		A9DD34A31844F16500A97DC4 /* NoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DD34A01844F16500A97DC4 /* NoWindow.xib */; };
+		A9DD34A41844F16500A97DC4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9DD34A11844F16500A97DC4 /* README.txt */; };
+		A9DD34A51844F16500A97DC4 /* WithWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DD34A21844F16500A97DC4 /* WithWindow.xib */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -68,20 +70,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07644227fa3a25b1f64628afacaaf90a /* Events.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Events.h; path = ../../../addons/ofxCocoa/src/Events.h; sourceTree = SOURCE_ROOT; };
-		0dc5d9c77ade14e9cab00a68e02bc487 /* ofxCocoa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxCocoa.h; path = ../../../addons/ofxCocoa/src/ofxCocoa.h; sourceTree = SOURCE_ROOT; };
-		2042dfd3744fa2a91b490ec6c5ba4de4 /* AppWindow.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = AppWindow.mm; path = ../../../addons/ofxCocoa/src/AppWindow.mm; sourceTree = SOURCE_ROOT; };
-		331ed6f62b50c37cde714efe0ab02e60 /* Events.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = Events.mm; path = ../../../addons/ofxCocoa/src/Events.mm; sourceTree = SOURCE_ROOT; };
-		3daf980fea341450256a08faefe7bee9 /* GLView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = GLView.mm; path = ../../../addons/ofxCocoa/src/GLView.mm; sourceTree = SOURCE_ROOT; };
-		794025806d97c4f64c9f8b4a6c14ac94 /* GLWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GLWindow.h; path = ../../../addons/ofxCocoa/src/GLWindow.h; sourceTree = SOURCE_ROOT; };
-		7c4d3085cb3ccec5203ba55d33caf58c /* AppWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AppWindow.h; path = ../../../addons/ofxCocoa/src/AppWindow.h; sourceTree = SOURCE_ROOT; };
-		9f187434f524d415a96e0ba783673803 /* CocoaInitSettings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CocoaInitSettings.h; path = ../../../addons/ofxCocoa/src/CocoaInitSettings.h; sourceTree = SOURCE_ROOT; };
-		A937C55116CB000C0041FDDD /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		A937C55216CB000C0041FDDD /* testApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = testApp.mm; sourceTree = "<group>"; };
-		A937C55716CB00260041FDDD /* NoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoWindow.xib; sourceTree = "<group>"; };
-		A937C55816CB00260041FDDD /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		A937C55916CB00260041FDDD /* WithWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithWindow.xib; sourceTree = "<group>"; };
+		07644227FA3A25B1F64628AF /* Events.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Events.h; path = ../../../addons/ofxCocoa/src/Events.h; sourceTree = SOURCE_ROOT; };
+		0DC5D9C77ADE14E9CAB00A68 /* ofxCocoa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxCocoa.h; path = ../../../addons/ofxCocoa/src/ofxCocoa.h; sourceTree = SOURCE_ROOT; };
+		2042DFD3744FA2A91B490EC6 /* AppWindow.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = AppWindow.mm; path = ../../../addons/ofxCocoa/src/AppWindow.mm; sourceTree = SOURCE_ROOT; };
+		331ED6F62B50C37CDE714EFE /* Events.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = Events.mm; path = ../../../addons/ofxCocoa/src/Events.mm; sourceTree = SOURCE_ROOT; };
+		3DAF980FEA341450256A08FA /* GLView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = GLView.mm; path = ../../../addons/ofxCocoa/src/GLView.mm; sourceTree = SOURCE_ROOT; };
+		794025806D97C4F64C9F8B4A /* GLWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GLWindow.h; path = ../../../addons/ofxCocoa/src/GLWindow.h; sourceTree = SOURCE_ROOT; };
+		7C4D3085CB3CCEC5203BA55D /* AppWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AppWindow.h; path = ../../../addons/ofxCocoa/src/AppWindow.h; sourceTree = SOURCE_ROOT; };
+		9F187434F524D415A96E0BA7 /* CocoaInitSettings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CocoaInitSettings.h; path = ../../../addons/ofxCocoa/src/CocoaInitSettings.h; sourceTree = SOURCE_ROOT; };
+		A9DD34871844EC8600A97DC4 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		A9DD34881844EC8600A97DC4 /* testApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = testApp.mm; sourceTree = "<group>"; };
+		A9DD34A01844F16500A97DC4 /* NoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoWindow.xib; sourceTree = "<group>"; };
+		A9DD34A11844F16500A97DC4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		A9DD34A21844F16500A97DC4 /* WithWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithWindow.xib; sourceTree = "<group>"; };
+		AEF4AF94F410B9D377A2135E /* GLView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GLView.h; path = ../../../addons/ofxCocoa/src/GLView.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		C1C61C80A74C50ECFCC43958 /* MyUIDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = MyUIDelegate.mm; path = src/MyUIDelegate.mm; sourceTree = SOURCE_ROOT; };
+		C35016965B4A150BEE186F28 /* AppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AppDelegate.h; path = ../../../addons/ofxCocoa/src/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		C645F5078849E368239AADA3 /* MyUIDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MyUIDelegate.h; path = src/MyUIDelegate.h; sourceTree = SOURCE_ROOT; };
+		D7A80730CFF890B8E92A2B6E /* GLWindow.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = GLWindow.mm; path = ../../../addons/ofxCocoa/src/GLWindow.mm; sourceTree = SOURCE_ROOT; };
+		D81093270E902ACCF42C970B /* ofxCocoa.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxCocoa.mm; path = ../../../addons/ofxCocoa/src/ofxCocoa.mm; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -103,13 +111,7 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
-		aef4af94f410b9d377a2135e91c31683 /* GLView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GLView.h; path = ../../../addons/ofxCocoa/src/GLView.h; sourceTree = SOURCE_ROOT; };
-		c1c61c80a74c50ecfcc43958339fbc18 /* MyUIDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = MyUIDelegate.mm; path = src/MyUIDelegate.mm; sourceTree = SOURCE_ROOT; };
-		c35016965b4a150bee186f289adc5910 /* AppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AppDelegate.h; path = ../../../addons/ofxCocoa/src/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		c645f5078849e368239aada3f6ff659f /* MyUIDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MyUIDelegate.h; path = src/MyUIDelegate.h; sourceTree = SOURCE_ROOT; };
-		d7a80730cff890b8e92a2b6edda92715 /* GLWindow.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = GLWindow.mm; path = ../../../addons/ofxCocoa/src/GLWindow.mm; sourceTree = SOURCE_ROOT; };
-		d81093270e902accf42c970b6c2363cc /* ofxCocoa.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxCocoa.mm; path = ../../../addons/ofxCocoa/src/ofxCocoa.mm; sourceTree = SOURCE_ROOT; };
-		f477b8e4f3d3a8967fdd6719a05fd194 /* AppDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = AppDelegate.mm; path = ../../../addons/ofxCocoa/src/AppDelegate.mm; sourceTree = SOURCE_ROOT; };
+		F477B8E4F3D3A8967FDD6719 /* AppDelegate.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = AppDelegate.mm; path = ../../../addons/ofxCocoa/src/AppDelegate.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,41 +142,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20f3805e115293faee0fc9ef0e09bd4c /* src */ = {
+		20F3805E115293FAEE0FC9EF /* src */ = {
 			isa = PBXGroup;
 			children = (
-				c35016965b4a150bee186f289adc5910 /* AppDelegate.h */,
-				f477b8e4f3d3a8967fdd6719a05fd194 /* AppDelegate.mm */,
-				7c4d3085cb3ccec5203ba55d33caf58c /* AppWindow.h */,
-				2042dfd3744fa2a91b490ec6c5ba4de4 /* AppWindow.mm */,
-				9f187434f524d415a96e0ba783673803 /* CocoaInitSettings.h */,
-				07644227fa3a25b1f64628afacaaf90a /* Events.h */,
-				331ed6f62b50c37cde714efe0ab02e60 /* Events.mm */,
-				aef4af94f410b9d377a2135e91c31683 /* GLView.h */,
-				3daf980fea341450256a08faefe7bee9 /* GLView.mm */,
-				794025806d97c4f64c9f8b4a6c14ac94 /* GLWindow.h */,
-				d7a80730cff890b8e92a2b6edda92715 /* GLWindow.mm */,
-				0dc5d9c77ade14e9cab00a68e02bc487 /* ofxCocoa.h */,
-				d81093270e902accf42c970b6c2363cc /* ofxCocoa.mm */,
+				C35016965B4A150BEE186F28 /* AppDelegate.h */,
+				F477B8E4F3D3A8967FDD6719 /* AppDelegate.mm */,
+				7C4D3085CB3CCEC5203BA55D /* AppWindow.h */,
+				2042DFD3744FA2A91B490EC6 /* AppWindow.mm */,
+				9F187434F524D415A96E0BA7 /* CocoaInitSettings.h */,
+				07644227FA3A25B1F64628AF /* Events.h */,
+				331ED6F62B50C37CDE714EFE /* Events.mm */,
+				AEF4AF94F410B9D377A2135E /* GLView.h */,
+				3DAF980FEA341450256A08FA /* GLView.mm */,
+				794025806D97C4F64C9F8B4A /* GLWindow.h */,
+				D7A80730CFF890B8E92A2B6E /* GLWindow.mm */,
+				0DC5D9C77ADE14E9CAB00A68 /* ofxCocoa.h */,
+				D81093270E902ACCF42C970B /* ofxCocoa.mm */,
 			);
 			name = src;
 			sourceTree = "<group>";
 		};
-		3e6eaece1e4c6af8119e19f6e449960c /* ofxCocoa */ = {
+		3E6EAECE1E4C6AF8119E19F6 /* ofxCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				A937C55616CB00260041FDDD /* nibs */,
-				20f3805e115293faee0fc9ef0e09bd4c /* src */,
+				A9DD349F1844F16500A97DC4 /* nibs */,
+				20F3805E115293FAEE0FC9EF /* src */,
 			);
 			name = ofxCocoa;
 			sourceTree = "<group>";
 		};
-		A937C55616CB00260041FDDD /* nibs */ = {
+		A9DD349C1844EF7A00A97DC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A937C55716CB00260041FDDD /* NoWindow.xib */,
-				A937C55816CB00260041FDDD /* README.txt */,
-				A937C55916CB00260041FDDD /* WithWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A9DD349F1844F16500A97DC4 /* nibs */ = {
+			isa = PBXGroup;
+			children = (
+				A9DD34A01844F16500A97DC4 /* NoWindow.xib */,
+				A9DD34A11844F16500A97DC4 /* README.txt */,
+				A9DD34A21844F16500A97DC4 /* WithWindow.xib */,
 			);
 			name = nibs;
 			path = ../nibs;
@@ -183,7 +192,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				3e6eaece1e4c6af8119e19f6e449960c /* ofxCocoa */,
+				3E6EAECE1E4C6AF8119E19F6 /* ofxCocoa */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				A9DD349C1844EF7A00A97DC4 /* Resources */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -251,11 +261,11 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A937C55116CB000C0041FDDD /* main.mm */,
-				A937C55216CB000C0041FDDD /* testApp.mm */,
+				A9DD34871844EC8600A97DC4 /* main.mm */,
+				A9DD34881844EC8600A97DC4 /* testApp.mm */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
-				c645f5078849e368239aada3f6ff659f /* MyUIDelegate.h */,
-				c1c61c80a74c50ecfcc43958339fbc18 /* MyUIDelegate.mm */,
+				C645F5078849E368239AADA3 /* MyUIDelegate.h */,
+				C1C61C80A74C50ECFCC43958 /* MyUIDelegate.mm */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -280,7 +290,7 @@
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
 				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
 				E4C2427710CC5ABF004149E2 /* CopyFiles */,
-				A937C55516CB001D0041FDDD /* Resources */,
+				A9DD349E1844F15700A97DC4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -297,8 +307,11 @@
 /* Begin PBXProject section */
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example_window" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -334,11 +347,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A937C55516CB001D0041FDDD /* Resources */ = {
+		A9DD349E1844F15700A97DC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A937C55C16CB00260041FDDD /* WithWindow.xib in Resources */,
+				A9DD34A41844F16500A97DC4 /* README.txt in Resources */,
+				A9DD34A51844F16500A97DC4 /* WithWindow.xib in Resources */,
+				A9DD34A31844F16500A97DC4 /* NoWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +371,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";";
+			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -365,15 +380,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				590fef0d293d8c60bee0c47042ea1ed6 /* MyUIDelegate.mm in Sources */,
-				44700308c06a2c12a26f0d91f71989f4 /* AppDelegate.mm in Sources */,
-				99f4edadf349e266c458ec67e23b7b61 /* AppWindow.mm in Sources */,
-				4f3d9a60113255ec7fd650237a2721be /* Events.mm in Sources */,
-				4f5fb969cb21ab2665798079b21cb85c /* GLView.mm in Sources */,
-				304cdace8a4e384196bd9325eac28579 /* GLWindow.mm in Sources */,
-				0ceb05d4444dd574d4e53d84342571a0 /* ofxCocoa.mm in Sources */,
-				A937C55316CB000C0041FDDD /* main.mm in Sources */,
-				A937C55416CB000C0041FDDD /* testApp.mm in Sources */,
+				590FEF0D293D8C60BEE0C470 /* MyUIDelegate.mm in Sources */,
+				44700308C06A2C12A26F0D91 /* AppDelegate.mm in Sources */,
+				99F4EDADF349E266C458EC67 /* AppWindow.mm in Sources */,
+				4F3D9A60113255EC7FD65023 /* Events.mm in Sources */,
+				A9DD34891844EC8600A97DC4 /* main.mm in Sources */,
+				A9DD348A1844EC8600A97DC4 /* testApp.mm in Sources */,
+				4F5FB969CB21AB2665798079 /* GLView.mm in Sources */,
+				304CDACE8A4E384196BD9325 /* GLWindow.mm in Sources */,
+				0CEB05D4444DD574D4E53D84 /* ofxCocoa.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +429,7 @@
 					../../../addons/ofxCocoa/libs,
 					../../../addons/ofxCocoa/src,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
@@ -450,6 +466,7 @@
 					../../../addons/ofxCocoa/libs,
 					../../../addons/ofxCocoa/src,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
@@ -462,6 +479,7 @@
 		E4B69B600A3A1757003C02F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,11 +487,10 @@
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -540,7 +557,6 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
 			};
@@ -549,17 +565,17 @@
 		E4B69B610A3A1757003C02F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -626,7 +642,6 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
