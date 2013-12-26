@@ -40,6 +40,7 @@
 
 #import "AppWindow.h"
 
+void ofGLReadyCallback();
 
 @interface GLView : NSOpenGLView {
 	NSRect			savedWindowFrame;
