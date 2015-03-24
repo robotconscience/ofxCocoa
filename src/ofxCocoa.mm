@@ -180,11 +180,11 @@ namespace MSA {
 		void setTransparent(bool b) {
 			[glWindow() setOpaque:!b];
 			if(b) {
-//				[glWindow() setBackgroundColor:[NSColor clearColor]]; 
+				[glWindow() setBackgroundColor:[NSColor clearColor]]; 
 				GLint i = 0;
 				[[glView() openGLContext] setValues:&i forParameter:NSOpenGLCPSurfaceOpacity]; 
 			} else {
-//				[glWindow() setBackgroundColor:[NSColor blackColor]]; 
+				[glWindow() setBackgroundColor:[NSColor blackColor]]; 
 				GLint i = 1;
 				[[glView() openGLContext] setValues:&i forParameter:NSOpenGLCPSurfaceOpacity]; 
 			}

@@ -40,7 +40,6 @@
 
 #import "AppWindow.h"
 
-void ofGLReadyCallback();
 
 @interface GLView : NSOpenGLView {
 	NSRect			savedWindowFrame;
@@ -54,18 +53,12 @@ void ofGLReadyCallback();
 	CVDisplayLinkRef displayLink;
 	NSTimer			*timer;
 	BOOL			isAnimating;
-    
-	// added BR: capture external mouse events
-	BOOL			captureExternalMouseEvents;
-	BOOL			externalMouseEventsActive;
-	id mouseMoveHandler, leftMouseDownHandler, rightMouseDownHandler, leftMouseUpHandler, rightMouseUpHandler, leftMouseDraggedHandler,rightMouseDraggedHandler;
 }
 
 @property (readonly) BOOL useDisplayLink;
 @property (readonly) int windowMode;
 @property (readonly) NSOpenGLContext* openGLContext;
 @property (readonly) NSOpenGLPixelFormat* pixelFormat;
-@property (readonly, getter=getCaptureExternalMouseEvents) BOOL captureExternalMouseEvents;
 
 
 -(id) initWithFrame:(NSRect)frameRect;
@@ -79,13 +72,11 @@ void ofGLReadyCallback();
 -(void) toggleAnimation;
 
 -(void) setFrameRate:(float)rate;
-
+- (void)viewDidChangeBackingProperties;
 
 -(void)goFullscreen:(NSScreen*)screen;
 -(void)goWindow;
 -(void)toggleFullscreen;
 
-// BR
--(void) setCaptureExternalMouseEvents:(BOOL)b;
 
 @end

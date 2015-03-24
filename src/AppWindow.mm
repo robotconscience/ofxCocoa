@@ -36,9 +36,11 @@
 
 
 #import "ofxCocoa.h"
+#import "ofAppRunner.h"
 
 #import <AppKit/AppKit.h>
 
+void ofGLReadyCallback();
 
 namespace MSA {
 	namespace ofxCocoa {
@@ -133,9 +135,11 @@ namespace MSA {
 			[context makeCurrentContext];
 			//[pool release];
 			
-			
 			//[context release];
 			[pool drain];
+            
+            NSLog(@"AppWindow::ofGLReadyCallback()");
+            ofGLReadyCallback();
 		}
 		
 		

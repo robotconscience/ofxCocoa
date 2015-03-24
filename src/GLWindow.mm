@@ -47,12 +47,12 @@ using namespace ofxCocoa;
 
 -(id) initWithContentRect:(NSRect)windowRect styleMask:(int)styleMask {
 	if(self = [super initWithContentRect:windowRect styleMask:styleMask backing:NSBackingStoreBuffered defer:YES]) {
-		[self setOpaque:appWindow()->initSettings().isOpaque];
 		if(appWindow()->initSettings().isOpaque) {
 			[self setBackgroundColor:[NSColor blackColor]]; 
 		} else {
 			[self setBackgroundColor:[NSColor clearColor]]; 
 		}
+		[self setOpaque:appWindow()->initSettings().isOpaque];
 		
 		[self setLevel:appWindow()->initSettings().windowLevel];
 		[self setHasShadow:appWindow()->initSettings().hasWindowShadow];

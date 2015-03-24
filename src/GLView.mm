@@ -279,6 +279,9 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	
 	if (self = [super initWithFrame:frameRect]) {
 		[[self openGLContext] makeCurrentContext];
+        
+        // retina
+        //[self  setWantsBestResolutionOpenGLSurface:YES];
 		
 		// set surface opacity
 		GLint i = appWindow()->initSettings().isOpaque;
@@ -288,18 +291,14 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 		i = 1;
 		[[self openGLContext] setValues:&i forParameter:NSOpenGLCPSwapInterval]; 
 		
-		
 		// Look for changes in view size
 		// Note, -reshape will not be called automatically on size changes because NSView does not export it to override 
 		[[NSNotificationCenter defaultCenter] addObserver:self 
 												 selector:@selector(reshape) 
 													 name:NSViewGlobalFrameDidChangeNotification
 												   object:self];
-	} else {
-        cout << "ERROR SETTING UP WINDOW" << endl;
-    }
+	}
 	
-    ofGLReadyCallback();
 	
 	return self;
 }
@@ -307,6 +306,10 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 -(id) initWithFrame:(NSRect)frameRect {
 	self = [self initWithFrame:frameRect shareContext:nil];
 	return self;
+}
+
+- (void)viewDidChangeBackingProperties {
+    self.layer.contentsScale = [[self window] backingScaleFactor];
 }
 
 -(void)lockFocus {
