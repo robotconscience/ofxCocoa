@@ -65,8 +65,8 @@
 
 @property (readonly) BOOL useDisplayLink;
 @property (readonly) int windowMode;
-@property (readonly) NSOpenGLContext* openGLContext;
-@property (readonly) NSOpenGLPixelFormat* pixelFormat;
+@property (strong) NSOpenGLContext* openGLContext;
+@property (strong) NSOpenGLPixelFormat* pixelFormat;
 @property (readonly, getter=getCaptureExternalMouseEvents) BOOL captureExternalMouseEvents;
 
 

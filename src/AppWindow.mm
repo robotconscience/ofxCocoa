@@ -82,7 +82,7 @@ namespace MSA {
 			
 			
 			
-			NSOpenGLPixelFormat* pixelFormat = nil;
+			pixelFormat = nil;
 			 
 			if(initSettings().numFSAASamples) {
 			 NSOpenGLPixelFormatAttribute attribs[] = {

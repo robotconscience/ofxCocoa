@@ -53,7 +53,9 @@ namespace MSA {
 		public:
 			AppWindow(InitSettings initSettings = InitSettings());
 			
-			NSOpenGLContext* context;
+            // these should be safer!
+            NSOpenGLContext* context;
+            NSOpenGLPixelFormat* pixelFormat;
 			
 			void setupOpenGL(int w, int h, int screenMode);
 			void initializeWindow();

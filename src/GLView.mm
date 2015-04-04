@@ -218,64 +218,9 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	
 	pixelFormat = nil;
 	
-	
-	
 	// Fixing the addon to compile against OF_007
-	cout<<"here"<<endl;
-    NSLog(@"%@", appWindow()->context);
 	openGLContext = appWindow()->context;
-	
-	/* Initialized at AppWindow::setupOpenGL
-	 
-	if(appWindow()->initSettings().numFSAASamples) {
-		NSOpenGLPixelFormatAttribute attribs[] = {
-			NSOpenGLPFAAccelerated,
-			NSOpenGLPFADoubleBuffer,
-			NSOpenGLPFAMultiScreen,
-			NSOpenGLPFADepthSize, 24,
-			NSOpenGLPFAAlphaSize, 8,
-			NSOpenGLPFAColorSize, 32,
-			NSOpenGLPFAMultisample,
-			NSOpenGLPFASampleBuffers, 1,
-			NSOpenGLPFASamples, appWindow()->initSettings().numFSAASamples,
-			NSOpenGLPFANoRecovery,
-			0};
-		
-		NSLog(@"   trying Multisampling");
-		pixelFormat = [[NSOpenGLPixelFormat alloc] initWithAttributes:attribs];
-		if(pixelFormat) {
-			NSLog(@"      Multisampling supported");
-			glEnable(GL_MULTISAMPLE);
-		} else {
-			NSLog(@"      Multisampling not supported");
-		}
-	}
-	
-	
-	if(pixelFormat == nil) {
-		NSLog(@"   trying non multisampling");
-		NSOpenGLPixelFormatAttribute attribs[] = {
-			NSOpenGLPFAAccelerated,
-			NSOpenGLPFADoubleBuffer,
-			NSOpenGLPFAMultiScreen,
-			NSOpenGLPFADepthSize, 24,
-			NSOpenGLPFAAlphaSize, 8,
-			NSOpenGLPFAColorSize, 32,
-			NSOpenGLPFANoRecovery,
-			0};		
-		
-		pixelFormat = [[NSOpenGLPixelFormat alloc] initWithAttributes:attribs];
-		glDisable(GL_MULTISAMPLE);
-		if(pixelFormat == nil) {
-			NSLog(@"      not even that. fail");
-		}
-	} 
-	
-	
-	openGLContext = [[NSOpenGLContext alloc] initWithFormat:pixelFormat shareContext:context];
-	*/
-	
-	// End fix 
+    pixelFormat = appWindow()->pixelFormat;
 	
 	if (self = [super initWithFrame:frameRect]) {
 		[[self openGLContext] makeCurrentContext];
