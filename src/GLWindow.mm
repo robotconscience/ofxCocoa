@@ -76,7 +76,8 @@ using namespace ofxCocoa;
 	
 	ofNotifyWindowResized(w, h);
 	
-	[self.contentView setNeedsDisplay:YES];
+    [self.contentView setNeedsDisplay:YES];
+    [self setBackgroundColor:[NSColor clearColor]];
 }
 
 - (BOOL)canBecomeKeyWindow {

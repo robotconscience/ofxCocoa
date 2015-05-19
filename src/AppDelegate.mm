@@ -103,7 +103,6 @@ static AppDelegate* _appDelegate = NULL;
 	_appDelegate	= self;
 	
 	if(_glWindow == nil) { // if no window in xib, create programmatically
-        cout<<"HAPPENING???"<<endl;
 		[self createGLWindowAndView:appWindow()->initSettings().initRect];	
 	} else {
 	}

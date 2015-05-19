@@ -84,28 +84,29 @@ namespace MSA {
 			
 			pixelFormat = nil;
 			 
-			if(initSettings().numFSAASamples) {
-			 NSOpenGLPixelFormatAttribute attribs[] = {
-			 NSOpenGLPFAAccelerated,
-			 NSOpenGLPFADoubleBuffer,
-			 NSOpenGLPFAMultiScreen,
-			 NSOpenGLPFADepthSize, 24,
-			 NSOpenGLPFAAlphaSize, 8,
-			 NSOpenGLPFAColorSize, 32,
-			 NSOpenGLPFAMultisample,
-			 NSOpenGLPFASampleBuffers, 1,
-			 NSOpenGLPFASamples, initSettings().numFSAASamples,
-			 NSOpenGLPFANoRecovery,
-			 0};
-			 
-			 NSLog(@"   trying Multisampling");
-			 pixelFormat = [[NSOpenGLPixelFormat alloc] initWithAttributes:attribs];
-			 if(pixelFormat) {
-				 NSLog(@"      Multisampling supported");
-			 glEnable(GL_MULTISAMPLE);
-			 } else {
-				 NSLog(@"      Multisampling not supported");
-			 }
+            if(initSettings().numFSAASamples) {
+                 NSOpenGLPixelFormatAttribute attribs[] = {
+                 NSOpenGLPFAAccelerated,
+                 NSOpenGLPFADoubleBuffer,
+//                 NSOpenGLPFAMultiScreen,
+                 NSOpenGLPFADepthSize, 24,
+                 NSOpenGLPFAAlphaSize, 8,
+                 NSOpenGLPFAColorSize, 32,
+                 NSOpenGLPFAMultisample,
+                 NSOpenGLPFASampleBuffers, 1,
+                 NSOpenGLPFASamples, initSettings().numFSAASamples,
+                 NSOpenGLPFANoRecovery,
+                 0};
+                 
+                 NSLog(@"   trying Multisampling");
+                 pixelFormat = [[NSOpenGLPixelFormat alloc] initWithAttributes:attribs];
+                
+                 if(pixelFormat) {
+                     NSLog(@"      Multisampling supported");
+                     glEnable(GL_MULTISAMPLE);
+                 } else {
+                     NSLog(@"      Multisampling not supported");
+                 }
 			 }
 			 
 			 
@@ -114,7 +115,7 @@ namespace MSA {
 			 NSOpenGLPixelFormatAttribute attribs[] = {
 			 NSOpenGLPFAAccelerated,
 			 NSOpenGLPFADoubleBuffer,
-			 NSOpenGLPFAMultiScreen,
+//			 NSOpenGLPFAMultiScreen,
 			 NSOpenGLPFADepthSize, 24,
 			 NSOpenGLPFAAlphaSize, 8,
 			 NSOpenGLPFAColorSize, 32,
