@@ -1,3 +1,7 @@
+DEPRECATED
+========
+I'm no longer supporting this addon, in favor of @julapy's ofxCocoaWindow. For now, I'm working on my fork of said addon [here](https://github.com/robotconscience/ofxCocoaWindow).
+
 ofxCocoa
 ========
 
